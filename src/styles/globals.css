@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.color {
+  color: #f4d1d18a;
+}
+
+/* Text */
+.titleText {
+}
+.subtitleText {
+}
+.contentText {
+}
+/* Margins and Paddings */
+.sectionRegulators {
+}
+.sectionRegulatorsLg {
+}
+/* Animations */
