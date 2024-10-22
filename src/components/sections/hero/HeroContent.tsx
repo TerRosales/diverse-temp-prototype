@@ -6,13 +6,18 @@ type Props = {};
 
 const HeroContent = (props: Props) => {
   return (
-    <motion.div
-      initial={{ x: -100, opacity: 0 }} // Start off-screen (left) and invisible
-      animate={{ x: 0, opacity: 1 }} // Slide into place and become visible
-      transition={{ duration: 0.5 }} // Animation duration of 0.5 seconds
-    >
-      HeroContent
-    </motion.div>
+    <article className="text-center px-4 sm:px-8 py-8">
+      <h1 className="text-4xl sm:text-5xl font-bold mb-4">
+        Empowering Diverse Talent, Driving Inclusive Success
+      </h1>
+      <p className="text-lg sm:text-xl leading-relaxed">
+        At Diverse Temp, we are committed to bridging the gap between
+        exceptional talent and forward-thinking organizations. Our mission is to
+        foster an inclusive workforce where diversity isn&apos;t just
+        welcomed—it&apos;s celebrated. We connect companies with professionals
+        from all backgrounds to help build stronger, more dynamic teams.
+      </p>
+    </article>
   );
 };
 
