@@ -5,8 +5,8 @@ type Props = {};
 
 const HeroContent = (props: Props) => {
   return (
-    <article className="py-2 my-2 mx-4">
-      <h1 className="text-4xl sm:text-6xl font-bold mb-4">
+    <article className="py-2 my-2 mx-4 px-6">
+      <h1 className="text-4xl sm:text-5xl font-bold mb-4">
         Empowering Diverse Talent, Driving Inclusive Success
       </h1>
       <p className="text-md sm:text-lg leading-relaxed">

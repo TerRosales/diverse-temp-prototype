@@ -1,24 +1,15 @@
 "use client";
 import React from "react";
 import HeroContent from "./HeroContent";
-import Image from "next/image";
 import "@/styles/globals.css";
 
 type Props = {};
 
 const HeroSection = (props: Props) => {
   return (
-    <section className="animation h-[50vh] bg-pink-100 my-10 md:flex-col lg:grid lg:grid-cols-3 lg:gap-2 justify-evenly items-center">
-      <section className="lg:col-span-2">
-        <Image
-          src="/licensed-stock-1.jpeg"
-          alt="Hero Image"
-          className=""
-          width={720}
-          height={720}
-          priority
-        />
-      </section>{" "}
+    <section className="bg-pink-100 mt-4 flex flex-col lg:grid lg:grid-cols-2 lg:gap-2 justify-evenly items-center min-h-[60%] mb-12">
+      {/* <div className="absolute w-[70%] h-[72%] bg-pink-200" /> */}
+      <div className="hero-image lg:col-span-1" />
       <section>
         <HeroContent />
       </section>
