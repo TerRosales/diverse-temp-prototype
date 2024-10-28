@@ -3,10 +3,13 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { FaBars } from "react-icons/fa";
+import "@/styles/elementStyles/styles.css";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [aboutOpen, setAboutOpen] = useState(false);
+  const [moreOpen, setMoreOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -74,7 +77,7 @@ export default function Navbar() {
           </div>
 
           {/* Apply Button */}
-          <Link href="/apply" className="custom-btn btn-main text-center">
+          <Link href="/apply" className="custom-btn btn-main">
             Apply
           </Link>
         </div>
@@ -99,7 +102,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white justify-end text-right pr-4">
+        <div className="md:hidden bg-white justify-end text-right pr-4 pt-4">
           <Link
             href="/"
             className="block py-2 px-4 text-gray-700 hover:bg-gray-100"
@@ -107,49 +110,57 @@ export default function Navbar() {
           >
             Home
           </Link>
+
+          {/* About Dropdown in Mobile */}
           <div className="relative">
             <button
-              onClick={() => setIsOpen(false)}
+              onClick={() => setAboutOpen(!aboutOpen)}
               className="block w-full text-right py-2 px-4 text-gray-700 hover:bg-gray-100"
             >
               About
             </button>
-            <div className="mr-4">
-              <Link
-                href="/company/mission"
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-right"
-              >
-                Our Mission
-              </Link>
-              <Link
-                href="/company/team"
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-right"
-              >
-                Our Team
-              </Link>
-            </div>
+            {aboutOpen && (
+              <div className="mr-4">
+                <Link
+                  href="/company/mission"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-right"
+                >
+                  Our Mission
+                </Link>
+                <Link
+                  href="/company/team"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-right"
+                >
+                  Our Team
+                </Link>
+              </div>
+            )}
           </div>
+
+          {/* More of Us Dropdown in Mobile */}
           <div className="relative">
             <button
-              onClick={() => setIsOpen(false)}
+              onClick={() => setMoreOpen(!moreOpen)}
               className="block w-full text-right py-2 px-4 text-gray-700 hover:bg-gray-100"
             >
               More of Us
             </button>
-            <div className="mr-4">
-              <Link
-                href="/company/partners"
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-right"
-              >
-                Partners
-              </Link>
-              <Link
-                href="/company/testimonials"
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-right"
-              >
-                Testimonials
-              </Link>
-            </div>
+            {moreOpen && (
+              <div className="mr-4">
+                <Link
+                  href="/company/partners"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-right"
+                >
+                  Partners
+                </Link>
+                <Link
+                  href="/company/testimonials"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-right"
+                >
+                  Testimonials
+                </Link>
+              </div>
+            )}
           </div>
 
           {/* Apply Button for Mobile */}

@@ -7,7 +7,8 @@ const HeroContent = (props: Props) => {
   return (
     <article className="py-2 my-2 mx-4 px-6">
       <h1 className="text-4xl sm:text-5xl font-bold mb-4">
-        Empowering Diverse Talent, Driving Inclusive Success
+        One Community,
+        <hr /> many Cultures & many Opportunities
       </h1>
       <p className="text-md sm:text-lg leading-relaxed">
         At Diverse Temp, we are committed to bridging the gap between
