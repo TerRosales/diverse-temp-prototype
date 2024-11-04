@@ -209,12 +209,18 @@
 
 @media (max-width: 1024px) {
   .card {
-    width: 290px;
+    width: 320px;
   }
 }
 
 @media (max-width: 768px) {
   .card {
-    width: 270px;
+    width: 310px;
+  }
+}
+
+@media (max-width: 320px) {
+  .card {
+    width: 280px;
   }
 }

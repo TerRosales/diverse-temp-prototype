@@ -1,0 +1,16 @@
+.missions,
+.goals {
+  @apply bg-black text-white text-3xl;
+}
+
+.goals {
+  background: url("/licensed-stock-goals.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
+.missions {
+  background: url("/licensed-stock-missions.jpeg");
+  background-position: center;
+  background-size: cover;
+}

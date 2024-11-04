@@ -1,4 +1,3 @@
-import { section } from "framer-motion/client";
 import React from "react";
 import AboutBanner from "./AboutBanner";
 import AboutCardsSection from "./AboutCardsSection";

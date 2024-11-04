@@ -1,43 +1,8 @@
-// import React from "react";
-// import AboutCard from "./AboutCard";
-
-// type Props = {};
-
-// const AboutCardsSection = (props: Props) => {
-//   return (
-//     <div className="flex flex-col md:flex-row justify-center gap-5 px-4 lg:gap-20 md:gap-15 py-12 md:py-16 items-center bg-green-200 h-[40%]">
-//       <AboutCard
-//         title="title 1"
-//         image="/licensed-stock-4.jpeg"
-//         content="This is a job description for Position 1."
-//         linkHref="/"
-//         buttonText="Chupapi"
-//       />
-//       <AboutCard
-//         title="title 2"
-//         image="/licensed-stock-3.jpeg"
-//         content="This is a job description for Position 2."
-//         linkHref="/"
-//         buttonText="Apply"
-//       />
-//       <AboutCard
-//         title="title 3"
-//         image="/licensed-stock-5.jpeg"
-//         content="This is a job description for Position 3."
-//         linkHref="/"
-//         buttonText="Hire"
-//       />
-//     </div>
-//   );
-// };
-
-// export default AboutCardsSection;
-
 import React, { useState } from "react";
 import AboutCard from "./AboutCard";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
-import "@/styles/sectionStyles/about.css";
+import "@/styles/sectionStyles/CTA.css";
 
 type Props = {};
 

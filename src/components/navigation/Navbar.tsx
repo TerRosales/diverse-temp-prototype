@@ -12,6 +12,8 @@ export default function Navbar() {
   const [moreOpen, setMoreOpen] = useState(false);
 
   useEffect(() => {
+    setIsScrolled(window.scrollY > 10); // Check initial scroll position
+
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
@@ -38,24 +40,14 @@ export default function Navbar() {
             Home
           </Link>
 
-          {/* About Dropdown */}
-          <div className="relative group">
-            <button className="hover:text-gray-700">About</button>
-            <div className="absolute left-0 w-40 bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 transition-opacity">
-              <Link
-                href="/company/mission"
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-              >
-                Our Mission
-              </Link>
-              <Link
-                href="/company/team"
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-              >
-                Our Team
-              </Link>
-            </div>
-          </div>
+          {/* About */}
+          <Link
+            href="/company/statements"
+            className="hover:text-gray-700"
+            onClick={() => setIsOpen(false)}
+          >
+            About
+          </Link>
 
           {/* More of Us Dropdown */}
           <div className="relative group">
@@ -90,11 +82,7 @@ export default function Navbar() {
           >
             <FaBars
               size={24}
-              className={`${
-                isScrolled
-                  ? "bg-transparent text-pink-400"
-                  : "bg-white shadow-md"
-              } `}
+              className={`${isScrolled ? "text-pink-400" : "text-gray-700"}`}
             />
           </button>
         </div>
@@ -110,8 +98,15 @@ export default function Navbar() {
           >
             Home
           </Link>
+          <Link
+            href="/company/statements"
+            className="block py-2 px-4 text-gray-700 hover:bg-gray-100"
+            onClick={() => setIsOpen(false)}
+          >
+            About
+          </Link>
 
-          {/* About Dropdown in Mobile */}
+          {/* About Dropdown in Mobile
           <div className="relative">
             <button
               onClick={() => setAboutOpen(!aboutOpen)}
@@ -122,20 +117,22 @@ export default function Navbar() {
             {aboutOpen && (
               <div className="mr-4">
                 <Link
-                  href="/company/mission"
+                  href="/company/statements?tab=missions"
                   className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-right"
+                  onClick={() => setIsOpen(false)} // Close menu on click
                 >
                   Our Mission
                 </Link>
                 <Link
-                  href="/company/team"
+                  href="/company/statements?tab=goals"
                   className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-right"
+                  onClick={() => setIsOpen(false)} // Close menu on click
                 >
-                  Our Team
+                  Our Goals
                 </Link>
               </div>
             )}
-          </div>
+          </div> */}
 
           {/* More of Us Dropdown in Mobile */}
           <div className="relative">
@@ -150,12 +147,14 @@ export default function Navbar() {
                 <Link
                   href="/company/partners"
                   className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-right"
+                  onClick={() => setIsOpen(false)} // Close menu on click
                 >
                   Partners
                 </Link>
                 <Link
                   href="/company/testimonials"
                   className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-right"
+                  onClick={() => setIsOpen(false)} // Close menu on click
                 >
                   Testimonials
                 </Link>

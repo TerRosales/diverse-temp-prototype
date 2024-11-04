@@ -24,7 +24,7 @@ export default function AppWrapper({
       {/* Animate transitions between different pages */}
       <main
         key={pathname} // key based on pathname for triggering animation on route change
-        className={`${!isRestricted ? "pt-14" : ""}`}
+        className={`${!isRestricted ? "pt-[3%]" : ""}`}
       >
         {children}
       </main>
