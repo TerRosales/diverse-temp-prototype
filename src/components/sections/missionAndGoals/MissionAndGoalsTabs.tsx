@@ -13,7 +13,7 @@ export default function MissionAndGoalsTabs() {
   ];
 
   return (
-    <div className="w-full max-w-5xl mx-auto mt-10 bg-blue-200">
+    <div className="w-full max-w-7xl mx-auto mt-10 bg-blue-200">
       {/* Tabs Header */}
       <div className="flex justify-around border-b-2 border-gray-200">
         {tabs.map((tab) => (

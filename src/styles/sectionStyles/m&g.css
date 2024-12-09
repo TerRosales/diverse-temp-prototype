@@ -13,7 +13,7 @@
 
 .missions,
 .goals {
-  background-position: center;
+  background-position: center 50%;
   background-size: cover;
   background-attachment: fixed;
 }
