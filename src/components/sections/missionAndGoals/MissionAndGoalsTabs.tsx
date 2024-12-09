@@ -8,14 +8,14 @@ export default function MissionAndGoalsTabs() {
   const [activeTab, setActiveTab] = useState(0);
 
   const tabs = [
-    { id: 0, label: "Tab 1", content: <MissionComponent /> },
-    { id: 1, label: "Tab 2", content: <GoalsComponent /> },
+    { id: 0, label: "Mission", content: <MissionComponent /> },
+    { id: 1, label: "Goals", content: <GoalsComponent /> },
   ];
 
   return (
-    <div className="w-full max-w-4xl mx-auto mt-10 p-4">
+    <div className="w-full max-w-5xl mx-auto mt-10 bg-blue-200">
       {/* Tabs Header */}
-      <div className="flex justify-around border-b-2 border-gray-200 ">
+      <div className="flex justify-around border-b-2 border-gray-200">
         {tabs.map((tab) => (
           <button
             key={tab.id}
@@ -32,7 +32,7 @@ export default function MissionAndGoalsTabs() {
       </div>
 
       {/* Tabs Content */}
-      <div className="text-center bg-gray-100 rounded-lg my-8 md:my-12">
+      <div className="text-center bg-gray-100 rounded-lg mt-2 md:mt-4 mb-8 md:mb-12">
         {tabs[activeTab].content}
       </div>
     </div>

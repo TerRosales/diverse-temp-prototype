@@ -5,12 +5,15 @@
 
 .goals {
   background: url("/licensed-stock-goals.jpeg");
-  background-position: center;
-  background-size: cover;
 }
 
 .missions {
   background: url("/licensed-stock-missions.jpeg");
+}
+
+.missions,
+.goals {
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }

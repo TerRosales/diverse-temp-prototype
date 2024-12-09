@@ -5,7 +5,7 @@ type Props = {};
 
 const page = (props: Props) => {
   return (
-    <div className="h-auto">
+    <div className="h-auto bg-pink-200">
       <MissionPage />
     </div>
   );

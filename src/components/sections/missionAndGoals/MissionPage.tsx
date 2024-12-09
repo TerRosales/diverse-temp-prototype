@@ -6,7 +6,7 @@ import MissionAndGoalsTabs from "./MissionAndGoalsTabs";
 export default function MissionPage() {
   return (
     <div className="mt-20">
-      <h1 className="text-center text-2xl font-bold mb-6">
+      <h1 className="w-full text-center text-2xl font-bold mb-6">
         Next.js Custom Tabs
       </h1>
       <MissionAndGoalsTabs />
