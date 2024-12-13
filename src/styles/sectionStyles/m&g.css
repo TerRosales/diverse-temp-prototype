@@ -1,19 +1,5 @@
-.missions,
-.goals {
-  @apply bg-black text-white text-3xl;
-}
-
-.goals {
-  background: url("/licensed-stock-goals.jpeg");
-}
-
-.missions {
-  background: url("/licensed-stock-missions.jpeg");
-}
-
-.missions,
-.goals {
-  background-position: center 50%;
-  background-size: cover;
-  background-attachment: fixed;
+.image-styles {
+  @apply absolute;
+  transform: translatey(150px);
+  filter: grayscale(100%);
 }
