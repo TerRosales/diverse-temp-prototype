@@ -106,7 +106,7 @@ export default function Navbar() {
             About
           </Link>
 
-          {/* About Dropdown in Mobile
+          {/* About Dropdown in Mobile Alternative
           <div className="relative">
             <button
               onClick={() => setAboutOpen(!aboutOpen)}

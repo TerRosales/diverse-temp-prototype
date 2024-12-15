@@ -32,10 +32,10 @@ export default function MissionAndGoalsTabs() {
       </div>
 
       {/* Tabs Content */}
-      <div className="text-center bg-gray-100 rounded-lg mt-2 md:mt-4 mb-8 md:mb-12">
+      <div className="text-center bg-gray-100 rounded-lg">
         {tabs[activeTab].content}
       </div>
-      <section className="h-auto py-10 px-10">
+      <section className="h-auto p-10">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
           tenetur atque reprehenderit quo, mollitia fugit, distinctio odit
