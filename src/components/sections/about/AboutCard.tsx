@@ -20,7 +20,7 @@ const AboutCard = ({
     <div className="card hover:scale-105 hover:-translate-y-1 hover:shadow-xl transition-all duration-200 my-6 md:my-20">
       {/* Image area with dynamic background */}
       <div
-        className="image shadow-lg "
+        className="image shadow-lg"
         style={{
           backgroundImage: `url(${image})`,
           backgroundSize: "cover",

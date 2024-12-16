@@ -7,7 +7,7 @@ const MissionComponent = (props: Props) => {
   return (
     <div
       id="missions"
-      className="missions h-[100vh] grid grid-cols-1 md:grid-cols-2 gap-[5%] max-w-6xl pt-16 mx-auto"
+      className="missions h-auto grid grid-cols-1 md:grid-cols-2 gap-[5%] max-w-6xl pt-16 mx-auto mb-10"
     >
       <section className="text-section text-start mx-10">
         <h2 className="text-4xl md:text-7xl font-bold mb-10 md:mb-12">
@@ -25,7 +25,7 @@ const MissionComponent = (props: Props) => {
         </p>
       </section>
       <section className="cta-section">
-        <div className="flex gap-6 mission-image h-full w-full">
+        <div className="mission-image h-[400px] md:h-full w-full">
           {/* <Image
             src="/licensed-stock-missions.jpeg"
             alt="mission image"
