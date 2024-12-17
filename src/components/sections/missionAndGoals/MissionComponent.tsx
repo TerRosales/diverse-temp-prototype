@@ -25,7 +25,7 @@ const MissionComponent = (props: Props) => {
         </p>
       </section>
       <section className="cta-section">
-        <div className="mission-image h-[400px] md:h-full w-full">
+        <div className="missions-image h-[400px] md:h-full w-full">
           {/* <Image
             src="/licensed-stock-missions.jpeg"
             alt="mission image"

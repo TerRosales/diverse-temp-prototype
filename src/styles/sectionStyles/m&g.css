@@ -13,8 +13,15 @@
 }
  */
 
-.mission-image {
+.missions-image {
   background-image: url("/licensed-stock-missions.jpeg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.goals-image {
+  background-image: url("/licensed-stock-goals.jpeg");
   background-size: cover;
   background-position: center;
   width: 100%;
