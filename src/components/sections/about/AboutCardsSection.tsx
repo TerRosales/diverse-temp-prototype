@@ -45,7 +45,7 @@ const AboutCardsSection = (props: Props) => {
     <div className="">
       <div className="flex flex-col lg:flex-row justify-center items-center bg-green-200 h-[40%] py-12 lg:py-16">
         {/* Desktop View */}
-        <div className="hidden lg:flex flex-row gap-5 px-4 lg:gap-10  w-full  md:w-[95%]">
+        <div className="hidden lg:flex flex-row gap-5 justify-center lg:gap-10  w-full md:w-[95%]">
           {aboutCards.map((card, index) => (
             <AboutCard key={index} {...card} />
           ))}

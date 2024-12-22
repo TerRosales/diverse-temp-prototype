@@ -7,7 +7,7 @@ const MissionComponent = (props: Props) => {
   return (
     <div
       id="missions"
-      className="missions h-auto grid grid-cols-1 md:grid-cols-2 gap-[5%] max-w-6xl pt-16 mx-auto mb-10"
+      className="missions h-auto grid grid-cols-1 md:grid-cols-2 gap-[5%] max-w-6xl pt-16 mx-auto pb-20"
     >
       <section className="text-section text-start mx-10">
         <h2 className="text-4xl md:text-7xl font-bold mb-10 md:mb-12">
@@ -35,7 +35,7 @@ const MissionComponent = (props: Props) => {
           /> */}
         </div>
       </section>
-      <section className="flex px-10 md:px-12 mb-10 CTA md:col-span-2 bg-green-200 items-center">
+      <section className="flex px-10 md:px-12 mb-10 CTA md:col-span-2 bg-green-200 items-center py-6 md:py-8 my-5">
         <p className="text-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
           pariatur, animi beatae dolore sint veritatis consectetur praesentium
